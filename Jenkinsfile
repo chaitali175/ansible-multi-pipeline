@@ -45,7 +45,7 @@ pipeline {
        stage('execute ansible') {
             
           steps{
-             ansiblePlaybook credentialsId: 'keypair', disableHostKeyChecking: true, installation: 'localAnsible', inventory: 'stage.inv', playbook: 'tomcat-setup.yml'
+             ansiblePlaybook credentialsId: 'keypair', disableHostKeyChecking: true, installation: 'localAnsible', inventory: 'prod.inv', playbook: 'tomcat-setup.yml'
                 
               }
 
