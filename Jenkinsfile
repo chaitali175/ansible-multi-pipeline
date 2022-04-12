@@ -36,7 +36,7 @@ pipeline {
           }
        }
               
-        stage('Get ansible code') 
+        stage('Get ansible code') {
           steps{
              
                  git branch: 'master', credentialsId: 'git-token', url: 'https://github.com/chaitali175/tomcatsetup.git'
