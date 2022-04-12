@@ -1,0 +1,2 @@
+[webservers]
+stageserver  ansible_user=root
