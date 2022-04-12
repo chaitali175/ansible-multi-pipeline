@@ -40,7 +40,7 @@ pipeline {
         {
           steps{
              
-                 git branch: 'master', credentialsId: 'git-token', url: 'https://github.com/chaitali175/tomcatsetup.git'
+                 git branch: 'master', credentialsId: 'git-token', url: 'https://github.com/chaitali175/ansible-multi-pipeline.git'
           }
        }
        stage('execute ansible') {
